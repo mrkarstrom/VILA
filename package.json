@@ -1,0 +1,31 @@
+{
+  "name": "vila",
+  "version": "1.0.0",
+  "description": "Kyrkvaktmästarens sök och administrationsverktyg",
+  "main": "server.js",
+
+  "scripts": {
+    "test": "jest",
+    "dev": "node --watch --env-file=.env server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrkarstrom/VILA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrkarstrom/VILA/issues"
+  },
+  "homepage": "https://github.com/mrkarstrom/VILA#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "type": "module"
+}
