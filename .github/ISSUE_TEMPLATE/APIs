@@ -1,3 +1,11 @@
+---
+name: API Route
+about: Define a new API route for the application
+title: "[API] "
+labels: enhancement, api
+assignees: ''
+---
+
 ### **Summary**  
 Provide a brief overview of what needs to be done. Describe the purpose of the route and its functionality.
 
