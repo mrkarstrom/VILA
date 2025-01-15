@@ -1,11 +1,10 @@
+---
 name: Create Boilerplate Code for Routes
 description: Use this template for creating the basic routes and structure for new features or APIs.
 
 labels:
-
-- boilerplate
-- enhancement
-
+  - boilerplate
+  - enhancement
 ---
 
 **Summary**  
