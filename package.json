@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Kyrkvaktmästarens sök och administrationsverktyg",
   "main": "server.js",
-
   "scripts": {
     "test": "jest",
     "dev": "node --watch --env-file=.env server.js",
@@ -21,8 +20,10 @@
   },
   "homepage": "https://github.com/mrkarstrom/VILA#readme",
   "dependencies": {
+    "colors": "^1.4.0",
     "express": "^4.21.2",
-    "node-cache": "^5.1.2"
+    "node-cache": "^5.1.2",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "jest": "^29.7.0"
