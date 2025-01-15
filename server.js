@@ -1,5 +1,6 @@
 import express from 'express';
 import logger from './src/middlewares/logger.js';
+import graveDeco from './src/routes/graveDeco.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -11,7 +12,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Welcome to the VILA.');
 });
-// app.use('api/v1', apiRouter);
+
+app.use('/api/v1/graves', graveDeco);
+
 
 if (process.env.NODE_ENV !== 'test') {
   app.listen(PORT, () => {
