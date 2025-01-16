@@ -1,3 +1,4 @@
+import { error } from 'console';
 import path from 'path';
 
 let graves = [
@@ -54,10 +55,16 @@ export const getAll = (req, res) => {
  * @route  GET /api/v1/:id/flowerSetting
  */
 export const getSingle = (req, res, next) => {
+  const id = parseInt(req.params.id);
+  if (isNaN(id)) {
+    return res.status(400).json({ error: 'Felaktigt grav-ID.' });
+  }
+  const grave = graves.find((grave) => grave.id === id);
+
   res.status(200).json({
     msg: `Hello from ${req.method} ${req.protocol}://${req.get('host')}${
       req.originalUrl
-    }`,
+    } with title: ${grave.title}`,
   });
   //   const id = parseInt(req.params.id);
   //   if (isNaN(id)) {
