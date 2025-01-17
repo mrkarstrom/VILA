@@ -5,7 +5,7 @@ import {
   make,
   update,
   remove,
-} from '../controllers/flowerController.js';
+} from '../controllers/decoController.js';
 
 const router = express.Router();
 
