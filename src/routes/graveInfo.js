@@ -13,7 +13,7 @@ router.get('/', getAll);
 
 router.get('/:id', getSingle);
 
-router.post('/:id', make);
+router.post('/', make);
 
 router.put('/:id', update);
 
